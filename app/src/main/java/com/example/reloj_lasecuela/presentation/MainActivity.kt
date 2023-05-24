@@ -8,6 +8,7 @@ package com.example.reloj_lasecuela.presentation
 
 import android.os.Bundle
 import android.view.animation.AlphaAnimation
+import android.view.animation.Animation
 import android.widget.TextView
 import androidx.activity.ComponentActivity
 import androidx.compose.foundation.background
@@ -33,14 +34,29 @@ class MainActivity : ComponentActivity() {
 
         val textView = findViewById<TextView>(R.id.ElKirbo)
         textView.setOnClickListener {
-            val fadeAnimation = AlphaAnimation(1.0f, 0.0f) // Crea la animación wea
+            val fadeOutAnimation = AlphaAnimation(1.0f, 0.0f) // Animación de fundido saliente
+            fadeOutAnimation.duration = 1000 // Duración del fundido saliente
+            fadeOutAnimation.fillAfter = true // Mantén la opacidad final después del fundido
 
-            fadeAnimation.duration = 1000 // Establece el tiempo de la animación mls
+            val fadeInAnimation = AlphaAnimation(0.0f, 1.0f) // Animación de fundido entrante
+            fadeInAnimation.duration = 1000 // Duración del fundido entrante
+            fadeInAnimation.fillAfter = true // Mantén la opacidad final después del fundido
 
-            fadeAnimation.fillAfter = true // Opacidad
+            fadeOutAnimation.setAnimationListener(object : Animation.AnimationListener {
+                override fun onAnimationStart(animation: Animation) {
+                    // No se necesita implementación
+                }
 
+                override fun onAnimationEnd(animation: Animation) {
+                    textView.startAnimation(fadeInAnimation) // Inicia el fundido entrante después de que el fundido saliente haya finalizado
+                }
 
-            textView.startAnimation(fadeAnimation)
+                override fun onAnimationRepeat(animation: Animation) {
+                    // No se necesita implementación
+                }
+            })
+
+            textView.startAnimation(fadeOutAnimation) // Inicia el fundido saliente
         }
 
 
