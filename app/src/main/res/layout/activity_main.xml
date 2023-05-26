@@ -16,19 +16,19 @@
             android:id="@+id/imageView7"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/kirbo"
+            android:src="@drawable/deadpool"
             />
 
         <TextView
             android:id="@+id/ElKirbo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
             android:layout_gravity="center"
-            android:fontFamily="@font/calligraphylel"
-            android:text="POYO"
-            android:textColor="#4C0202"
-            android:textSize="80sp"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/oles"
+            android:text="Deadpool"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
             android:typeface="monospace" />
 
     </FrameLayout>

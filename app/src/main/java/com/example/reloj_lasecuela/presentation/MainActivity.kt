@@ -34,25 +34,25 @@ class MainActivity : ComponentActivity() {
 
         val textView = findViewById<TextView>(R.id.ElKirbo)
         textView.setOnClickListener {
-            val fadeOutAnimation = AlphaAnimation(1.0f, 0.0f) // Animación de fundido saliente
-            fadeOutAnimation.duration = 1000 // Duración del fundido saliente
-            fadeOutAnimation.fillAfter = true // Mantén la opacidad final después del fundido
+            val fadeOutAnimation = AlphaAnimation(1.0f, 0.0f) // Animación desvanecimiento saliente
+            fadeOutAnimation.duration = 2500 // Duración del desvanecimiento saliente
+            fadeOutAnimation.fillAfter = true // Mantén la opacidad final después del desvanecimiento
 
-            val fadeInAnimation = AlphaAnimation(0.0f, 1.0f) // Animación de fundido entrante
-            fadeInAnimation.duration = 1000 // Duración del fundido entrante
-            fadeInAnimation.fillAfter = true // Mantén la opacidad final después del fundido
+            val fadeInAnimation = AlphaAnimation(0.0f, 1.0f) // Animación de desvaneciemiento entrante
+            fadeInAnimation.duration = 2500 // Duración del desvane entrante
+            fadeInAnimation.fillAfter = true // Mantén el desvanecimeinto final después del fundido
 
             fadeOutAnimation.setAnimationListener(object : Animation.AnimationListener {
                 override fun onAnimationStart(animation: Animation) {
-                    // No se necesita implementación
+
                 }
 
                 override fun onAnimationEnd(animation: Animation) {
-                    textView.startAnimation(fadeInAnimation) // Inicia el fundido entrante después de que el fundido saliente haya finalizado
+                    textView.startAnimation(fadeInAnimation)
                 }
 
                 override fun onAnimationRepeat(animation: Animation) {
-                    // No se necesita implementación
+
                 }
             })
 
