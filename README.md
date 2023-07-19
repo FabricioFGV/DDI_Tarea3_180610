@@ -15,6 +15,5 @@ Practica de personalizacion de la pantalla como cambio de color de fuente, cambi
 | Característica         | Información                                                              |
 |------------------------|--------------------------------------------------------------------------|
 | Nombre                 | Tarea 3 Fuente, Animación, Imagen                                        |
-| Descripción            | Practica de personalizacion de la pantalla como cambio de color de fuente, cambio de imagen de fondo y cambio de fuente.
- |
+| Descripción            | Practica de personalizacion de la pantalla como cambio de color de fuente, cambio de imagen de fondo y cambio de fuente.|
 | Fecha de Carga         | 24/05/23                                                                 |
