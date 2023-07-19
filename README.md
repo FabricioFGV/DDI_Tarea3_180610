@@ -9,11 +9,12 @@
 ## Tarea 3 Fuente, Animación, Imagen
 
 ## Descripción
-En esta práctica realizada en Android Studio, se desarrolló una aplicación para un dispositivo wearable que muestra una imagen y un texto con animación. La tarea consistió en crear una aplicación que despliega una imagen y un texto animado en un dispositivo wearable.
+Practica de personalizacion de la pantalla como cambio de color de fuente, cambio de imagen de fondo y cambio de fuente.
 
 ## Características
 | Característica         | Información                                                              |
 |------------------------|--------------------------------------------------------------------------|
 | Nombre                 | Tarea 3 Fuente, Animación, Imagen                                        |
-| Descripción            | Creación de una aplicación para un dispositivo wearable que muestra una imagen y un texto con animación |
+| Descripción            | Practica de personalizacion de la pantalla como cambio de color de fuente, cambio de imagen de fondo y cambio de fuente.
+ |
 | Fecha de Carga         | 24/05/23                                                                 |
